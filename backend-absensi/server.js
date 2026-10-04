@@ -21,10 +21,10 @@ if (!fs.existsSync('./uploads')) {
 
 // Database Connection Pool
 const db = mysql.createPool({
-  host: process.env.DB_HOST || 'localhost',
-  user: process.env.DB_USER || 'root',
-  password: process.env.DB_PASSWORD || '',
-  database: process.env.DB_NAME || 'db_absensi',
+  host: process.env.DB_HOST ,
+  user: process.env.DB_USER ,
+  password: process.env.DB_PASSWORD ,
+  database: process.env.DB_NAME,
   timezone:'+07:00',
   waitForConnections: true,
   connectionLimit: 10,
