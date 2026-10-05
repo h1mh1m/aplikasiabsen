@@ -35,10 +35,10 @@ const db = mysql.createPool({
 async function checkDb() {
   try {
     const conn = await db.getConnection();
-    console.log('✅ Terhubung ke MySQL (db_absensi)');
+    console.log('Terhubung ke MySQL (db_absensi)');
     conn.release();
   } catch (err) {
-    console.error('❌ Gagal Koneksi DB:', err.message);
+    console.error('Gagal Koneksi DB:', err.message);
   }
 }
 checkDb();
@@ -163,5 +163,5 @@ app.get('/api/admin/absensi', async (req, res) => {
 
 // Start Server
 app.listen(PORT, () => {
-  console.log(`🚀 Server berjalan di http://localhost:${PORT}`);
+  console.log(`Server berjalan di http://localhost:${PORT}`);
 });

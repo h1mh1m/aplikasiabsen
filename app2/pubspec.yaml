@@ -14,6 +14,7 @@ dependencies:
   camera_web: ^0.3.5
   geolocator: ^12.0.0          # Mengakses GPS
   image_picker: ^1.1.2        # Mengambil foto/kamera
+  http: ^1.2.2
 
 dev_dependencies:
   flutter_test:
